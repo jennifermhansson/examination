@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Fitness</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>PURE FITNESS</h1>
+            <a href="#home">Hem</a>
+            <a href="#services">Träningspass</a>
+            <a href="#bmi">BMI-räknare</a>
+            <a href="#contact">Kontakt</a>
+
+        </nav> 
+    </header>
+
+    <div id="hero">
+        <video autoplay loop muted>
+            <source src="https://www.pexels.com/download/video/2376809/" type="video/mp4">
+        </video>
+    </div>
+
+    <section id="home">
+        <h2>Välkommen till Pure Fitness</h2>
+        <p>Upptäck våra träningspass och ta kontroll över din hälsa!</p>
+    </section>
+
+    <section id="services">
+        <h2>Träningspass</h2>  
+        <div class="cards"> 
+            <div class="card">
+                <h3>Styrketräning</h3>
+                <p>Bygg muskler och styrka med våra professionella instruktörer.</p>
+            </div>
+
+            <div class="card">
+                <h3>Yoga</h3>
+                <p>Förbättra flexibilitet och mental balans</p>
+                <img id ="image"src ="https://images.pexels.com/photos/868757/pexels-photo-868757.jpeg">
+            </div>
+
+            <div class="card">
+                <h3>Cardio</h3>
+                <p>Förbättra kondition och uthållighet med våra pulshöjande pass.</p>
+            </div> 
+        </div>
+    </section>
+   
+    <section id="bmi">
+        <h2>BMI-räknare</h2>
+        <div class="container">
+            <input type="number" id="weight" placeholder="Weight (kg)" step="0.1">
+            <input type="number" id="height" placeholder="Height (cm)" step="0.1">
+        
+            <button onclick="calculateBMI()">Calculate</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Namn:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" required></textarea> 
+
+            <button type="submit">Skicka</button> 
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pure Fitness. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    
+</body>
+</html>
