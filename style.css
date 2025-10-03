@@ -26,7 +26,10 @@ header {
     color: #fff;
     padding: 1rem;
     margin: none;
-  
+}
+
+header h1 {
+    margin-bottom: 0,5rem;
 }
 
 header nav {
@@ -94,10 +97,19 @@ footer {
     margin-top: 2rem;
 }
 
-#image {
+#image1 {
     flex-direction: row;
-    width: 700px;
-    height: 500px;
+    width: 400px;
+}
+
+#image2 {
+    flex-direction: row;
+    width: 400px;
+}
+
+#image3 {
+    flex-direction: row;
+    width: 400px;
 }
 
 @media screen and (max-width: 768px) {
@@ -108,15 +120,6 @@ footer {
 
     header nav {
         flex-direction: column;
-    }
-
-    header ul {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    header ul li {
-        margin: 0.5rem 0;
     }
 }
 
