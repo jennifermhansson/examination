@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pure Fitness</title>
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <h1>PURE FITNESS</h1>
-            <a href="#home">Hem</a>
-            <a href="#services">Träningspass</a>
-            <a href="bmicalculator.html">BMI-räknare</a>
-            <a href="contact.html">Kontakt</a>
-
-        </nav> 
+      <nav>
+        <h1>PURE FITNESS</h1>
+        <a href="#home">Hem</a>
+        <a href="#services">Träningspass</a>
+        <a href="bmicalculator.html">BMI-räknare</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
     </header>
 
     <div id="hero">
-        <video autoplay loop muted>
-            <source src="https://www.pexels.com/download/video/2376809/" type="video/mp4">
-        </video>
-    </div>
-
-    <section id="home">
+      <video autoplay loop muted>
+        <source
+          src="https://www.pexels.com/download/video/2376809/"
+          type="video/mp4"/>
+      </video>
+      <div class="hero-content">
         <h2>Välkommen till Pure Fitness</h2>
         <p>Upptäck våra träningspass och ta kontroll över din hälsa!</p>
-    </section>
+      </div>
+    </div>
 
     <section id="services">
         <h2>Träningspass</h2>  
@@ -55,38 +55,36 @@
             </div> 
         </div>
     </section>
-   
+
     <section id="bmi">
-        <h2>BMI-räknare</h2>
-        <div class="container">
-            <input type="number" id="weight" placeholder="Weight (kg)" step="0.1">
-            <input type="number" id="height" placeholder="Height (cm)" step="0.1">
-        
-            <button onclick="calculateBMI()">Calculate</button>
-            <p id="result"></p>
-        </div>
+      <h2>BMI-räknare</h2>
+      <div class="container">
+        <input type="number" id="weight" placeholder="Weight (kg)" step="0.1" />
+        <input type="number" id="height" placeholder="Height (cm)" step="0.1" />
+
+        <button onclick="calculateBMI()">Calculate</button>
+        <p id="result"></p>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Kontakt</h2>
-        <form>
-            <label for="name">Namn:</label>
-            <input type="text" id="name" required>
+      <h2>Kontakt</h2>
+      <form>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" required />
 
-            <label for="email">E-post:</label>
-            <input type="email" id="email" required>
+        <label for="email">E-post:</label>
+        <input type="email" id="email" required />
 
-            <label for="message">Meddelande:</label>
-            <textarea id="message" required></textarea> 
+        <label for="message">Meddelande:</label>
+        <textarea id="message" required></textarea>
 
-            <button type="submit">Skicka</button> 
-        </form>
+        <button type="submit">Skicka</button>
+      </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Pure Fitness. Alla rättigheter förbehållna.</p>
+      <p>&copy; 2025 Pure Fitness. Alla rättigheter förbehållna.</p>
     </footer>
-
-    
-</body>
+  </body>
 </html>
