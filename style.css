@@ -1,7 +1,7 @@
 
 *{
     margin: 0;
-    padding: 1;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     
@@ -12,15 +12,7 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
-
-#hero video {
-    height: 100vh;
-    width: 100%;
-    background-position: absolute;
-    z-index: 10;
-    object-fit: cover;
-}
-
+    
 header {
     background-color: #1e1e1e;
     color: #fff;
@@ -39,9 +31,41 @@ header nav {
     flex-direction: row;
     color: #f5f5f5;
 }
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#hero video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 2.2rem;   /* mobilvänlig storlek */
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
 
 section {
-    padding: 6rem;
+    padding: 2rem 1rem;
     text-align: center;
 
 }
@@ -50,7 +74,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    
     align-items: center;
     gap: 1rem;
 }
@@ -58,7 +82,8 @@ section {
 .card {
     background-color: #fff;
     padding: 1rem;
-    width: 500px;
+    width: 100%;       
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -110,7 +135,14 @@ footer {
 #image3 {
     flex-direction: row;
     width: 400px;
+
 }
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 @media screen and (max-width: 768px) {
     .cards {
@@ -122,4 +154,7 @@ footer {
         flex-direction: column;
     }
 }
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
