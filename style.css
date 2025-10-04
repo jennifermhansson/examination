@@ -52,6 +52,17 @@ header nav {
     color: #f5f5f5;
 }
 
+nav a {
+  color: #c3baba;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 30px;
+}
+nav a:hover {
+  background: rgba(53, 53, 53, 0.503);
+}
+
 #hero {
   position: relative;
   height: 100vh;
