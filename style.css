@@ -7,6 +7,23 @@
     
 }
 
+.skip-link {
+    position: absolute;
+    margin-top: -50px;
+    left: 0;
+    top: 0;
+    background-color: rgb(200, 198, 198);
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    margin-top: 0;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
