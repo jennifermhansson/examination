@@ -23,7 +23,6 @@
     margin-top: 0;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -31,8 +30,13 @@ body {
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
+    background: linear-gradient(-45deg, rgb(31, 31, 31), white)
 }
-    
+ 
+h1{
+  margin-bottom: 20px;
+}
+
 header {
     background-color: #1e1e1e;
     color: #fff;
@@ -100,27 +104,36 @@ h2 {
 }
 
 section {
-    padding: 2rem 1rem;
-    text-align: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 25px;
 }
-
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 2rem;
+  margin-top: 40px;
 }
-
 .card {
-    background-color: #fff;
-    padding: 1rem;
-    width: 100%;       
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 1rem;
+  flex: 1 1 300px; 
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+.card img {
+  width: 100%;
+  height: 220px; /* fast höjd för lika stora bilder */
+  object-fit: cover; /* beskär snyggt utan att dra ut bilden */
+  border-radius: 10px;
+  margin-top: 1rem;
 }
 
 input, textarea, button {
@@ -140,26 +153,15 @@ button:hover {
     background-color: #444;
 }
 
-#image1 {
-    flex-direction: row;
-    width: 400px;
-}
 
-#image2 {
-    flex-direction: row;
-    width: 400px;
-}
 
-#image3 {
-    flex-direction: row;
-    width: 400px;
-
-}
 #image {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+
 
 footer {
     text-align: center;
