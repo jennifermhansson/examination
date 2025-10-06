@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI-Calculator - Räkna ut din BMI</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="bmi.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -19,8 +20,6 @@
     </header>
     
 
-    <div id="background-image">
-      <img id="image6" src="https://www.pcom.edu/_resources/images/news/pcom-south-georgia/april-2025/how-accurate-is-bmi-2024-rss.webp"/>
 
       <section id="bmi">
       <h2>BMI Calculator</h2>
@@ -31,10 +30,10 @@
       
       
       <div class="containerbmi">
-        <input type="number" id="weight" placeholder="Weight (kg)" step="0.1" />
-        <input type="number" id="height" placeholder="Height (cm)" step="0.1" />
+        <input type="number" id="weight" placeholder="Vikt (kg)" step="0.1" />
+        <input type="number" id="height" placeholder="Längd (cm)" step="0.1" />
 
-        <button onclick="calculateBMI()">Calculate</button>
+        <button id="bmibutton" onclick="calculateBMI()">Beräkna</button>
         <p id="result"></p>
         </div>
       </div>
