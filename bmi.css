@@ -1,0 +1,55 @@
+body, html {
+   background-image: url("https://www.pcom.edu/_resources/images/news/pcom-south-georgia/april-2025/how-accurate-is-bmi-2024-rss.webp");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+#bmi {
+    background-color: rgba(203, 198, 208, 0.493);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5remn;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    flex: 1;
+    gap: 15px;
+}
+
+#containerbmi {
+     background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 300px;
+}
+
+#weight, #height:placeholder-shown {
+  text-align: center;
+}
+
+#weight, #height{
+    width: 200px;
+}
+
+#bmibutton {
+    background-color: #1e1e1e;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+}
+
+#bmibutton:hover {
+    background-color: #444;
+}
+
+#result {
+    font-size: 20px;
+}
