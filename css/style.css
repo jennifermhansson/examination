@@ -179,6 +179,11 @@ button:hover {
   margin: 25px;
 }
 
+#about-text{
+font-size: 15pt;
+font-weight: 700;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
