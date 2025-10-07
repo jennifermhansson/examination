@@ -13,13 +13,17 @@
     margin: 30px;
 }
 
+.popupContainer input{
+    width: 230px;
+}
+
 .btn{
     margin: 20px;
     display: flex;
     justify-content: center;
     width: 150px;
     padding: 10px;
-    background-color: #00b3b3;
+    background-color: #222222;
     color: white;
     border: none;
     border-radius: 5px;
@@ -27,26 +31,7 @@
 }
 
 .btn:hover {
-    background-color: #008a8a;
-}
-
-/* Formulärvalidering CSS */
-.error-message {
-    color: #ff4444;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    display: block;
-    min-height: 20px;
-}
-
-.invalid {
-    border: 2px solid #ff4444 !important;
-    background-color: #ffe6e6;
-}
-
-.valid {
-    border: 2px solid #4CAF50 !important;
-    background-color: #e8f5e8;
+    background-color: #acacac;
 }
 
 .popupFrame {

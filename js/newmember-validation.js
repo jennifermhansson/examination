@@ -1,4 +1,4 @@
-// Formulärvalidering för newmember.html
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("membershipForm");
     const firstName = document.getElementById("firstName");
@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email");
     const membership = document.getElementById("membership");
 
-    // Lägg till realtidsvalidering när användaren skriver
+
     firstName.addEventListener("blur", () => validateFirstName());
     lastName.addEventListener("blur", () => validateLastName());
     email.addEventListener("blur", () => validateEmail());
     membership.addEventListener("change", () => validateMembership());
 
-    // Huvudvalidering när formuläret skickas
+  
     form.addEventListener("submit", (e) => {
-        e.preventDefault(); // Förhindra standardformulärinlämning
+        e.preventDefault(); //
         
         const isValid = validateForm();
         if (isValid) {
@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Validera hela formuläret
     function validateForm() {
         const isFirstNameValid = validateFirstName();
         const isLastNameValid = validateLastName();
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return isFirstNameValid && isLastNameValid && isEmailValid && isMembershipValid;
     }
 
-    // Validera förnamn
     function validateFirstName() {
         const value = firstName.value.trim();
         const errorElement = document.getElementById("firstNameError");
@@ -52,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     }
 
-    // Validera efternamn
     function validateLastName() {
         const value = lastName.value.trim();
         const errorElement = document.getElementById("lastNameError");
@@ -72,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     }
 
-    // Validera email
     function validateEmail() {
         const value = email.value.trim();
         const errorElement = document.getElementById("emailError");
@@ -90,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     }
 
-    // Validera medlemskap
     function validateMembership() {
         const value = membership.value;
         const errorElement = document.getElementById("membershipError");
@@ -104,36 +99,42 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     }
 
-    // Visa felmeddelande
     function showError(inputElement, errorElement, message) {
         inputElement.classList.remove("valid");
         inputElement.classList.add("invalid");
         errorElement.textContent = message;
     }
 
-    // Visa framgång
     function showSuccess(inputElement, errorElement) {
         inputElement.classList.remove("invalid");
         inputElement.classList.add("valid");
         errorElement.textContent = "";
     }
 
-    // Visa framgångsmeddelande
     function showSuccessMessage() {
+  
+        const userFirstName = firstName.value.trim();
+        
+       
+        const successTitle = document.getElementById("successTitle");
+        const successMessage = document.getElementById("successMessage");
+        
+        successTitle.textContent = `Tack ${userFirstName}!`;
+        successMessage.textContent = `Välkommen som medlem hos Pure Fitness! Du får snart ett mail med en bekräftelse på ditt medlemskap. Vi ser fram emot att träffa dig snart.`;
+        
+
         const popup = document.getElementById("popupFrame");
         popup.classList.remove("hidden");
-        
-        // Rensa formuläret
+      
         form.reset();
         
-        // Ta bort alla valideringsklasser
+
         [firstName, lastName, email, membership].forEach(input => {
             input.classList.remove("valid", "invalid");
         });
     }
-});
+})
 
-// Stäng popup-funktion (global)
 function closePopup() {
     const popup = document.getElementById("popupFrame");
     popup.classList.add("hidden");
