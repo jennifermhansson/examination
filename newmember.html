@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure Fitness</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="newmember.css" rel="stylesheet" />
+  </head>
+
+  <body>
+     <a href="#services" class="skip-link">Gå direkt till innehåll</a>
+    <header>
+      <nav>
+        <img src="logo.png" alt="logo">
+        <h1>PURE FITNESS</h1>
+        <a href="index.html">Hem</a>
+        <a href="gymclasses.html">Träningspass</a>
+        <a href="bmicalculator.html">BMI-räknare</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+        <div class="popupContainer"> 
+            <form action="input"> 
+                <h1>Bli medlem</h1> 
+                <p>Förnamn:</p> 
+                <input id="inputname" type="text" placeholder="ex Anna . . ." /> 
+                <p>Efternamn:</p> 
+                <input id="inputname" type="text" placeholder="ex Svensson . . ." /> 
+                <p>Email:</p> 
+                <input id="inputmail" type="email" placeholder="ex anna.svensson@test.se" /> 
+                <p>Medlemskap</p> 
+                <select name="membership" id="medlemskap"> 
+                    <option value="">Välj ditt medlemskap 
+                        <option value="year">Medlemskap Helår 2000kr (engångsbetalning)</option> 
+                        <option value="month">Medlemskap månad(autogiro) 100kr/mån</option> 
+                        <option value="onetime">Provträning 100kr</option>
+
+                        
+            <input type hidden="submit" > 
+            <button type="button" class="btn" onclick="openPopup()"> Bli medlem </button> 
+        </form> 
+        <div class="popupFrame" id="popupFrame"> 
+            <h2>Tack!</h2> 
+            <p>Du är nu medlem!</p> 
+            <button type="button" onclick="closePopup()">OK!</button> 
+            
+        </div> 
+    </div> 
+</div>
+        <footer>
+      <p>&copy; 2025 Pure Fitness. Alla rättigheter förbehållna.</p>
+    </footer>
+
+   <script src="script.js"></script>
+  </body>
+</html>
