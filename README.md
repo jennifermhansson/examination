@@ -5,7 +5,7 @@
 A responsive and accessible web project built with HTML, CSS, and JavaScript.  
 This project focuses on creating a modern, user-friendly interface and adding interactivity through JavaScript.
 The website contains code written by us, but with AI help for writing generic content text to make it more realistic.
-For some features AI has been a helping hand when stuck on syntax errors, asking for hints to lead us in the right direction to be able to solve the problem. 
+For some features AI has been a helping hand when stuck on syntax errors, asking for hints to lead us in the right direction to be able to solve the problem. Our inspiration for code, style and main setup has been found on google, mozilla.developer, youtube and our previous projects.
 
 ---
 
