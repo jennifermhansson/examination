@@ -5,6 +5,7 @@
 A responsive and accessible web project built with HTML, CSS, and JavaScript.  
 This project focuses on creating a modern, user-friendly interface and adding interactivity through JavaScript.
 The website contains code written by us, but with AI help for writing generic content text to make it more realistic.
+For some features AI has been a helping hand when stuck on syntax errors, asking for hints to lead us in the right direction to be able to solve the problem. 
 
 ---
 
@@ -20,13 +21,20 @@ The website contains code written by us, but with AI help for writing generic co
 Our website is structured with:
 HTML:
 - landing page (index.html) 
-- subpages (Contact.html, gymgclasses.html, bmicalculator.html).
+- subpages (Contact.html, gymgclasses.html, bmicalculator.html, newmember.html).
 
 CSS :
-- CSS code for all pages (style.css) for all pages share the same styling
-- CSS code for specific styles, (bmi.css)
+- CSS file for all pages (style.css) for all pages share the same styling
+- CSS files for specific page styles, (bmi.css, carousel.css, contact.css, newmember.css )
 
 JS:
-- Javascript code for BMI calculator (bmicalculator.js)
+- Javascript code for BMI calculator (bmicalculator.js) and for carousel function
+- Javascript file for newmember form validation (newmember-validation.js)
+
+#Project Plan:
+
+- Created a simple project plan with a todo list based on the requirements of the assignment. The project plan changed dynamical during the project to fit our current need. 
+- The team practiced pair programming, alternating between the roles of driver (writing code) and navigator (reviewing and providing guidance). This gave us two perspectives for discussions, problem-solving, and knowledge sharing, while also improving team communication and bonding.
+- The team also worked individually in separate branches to be able to work efficient and focused with different tasks.
  
 
