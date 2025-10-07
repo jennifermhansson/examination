@@ -29,19 +29,6 @@ prev.addEventListener("click", function () {
 });
 
 
-let popupFrame = document.getElementById("popupFrame") 
-let popupName = document.getElementById("inputname") 
-
-const openPopup = () => { 
-  popupFrame.classList.add("open-popup") 
-
-  const popupTitle = popupFrame.document.createElement("h2") 
-  const popupMessage = popupFrame.document.createElement("p2") 
-  
-  const closePopup = () => { 
-    popupFrame.classList.remove("open-popup") }
-}
-
 
 function calculateBMI() {
 let weight = document.getElementById("weight").value;
