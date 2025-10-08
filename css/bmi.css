@@ -1,9 +1,16 @@
 body, html {
-   background-image: url("https://4rai.com/wp-content/uploads/sites/20/2023/06/fitness-bmi.png");
    height: 100%;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   position: relative;
+}
+
+.background-image {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
 }
 
 section {
@@ -13,7 +20,8 @@ section {
 }
 
 #bmi {
-    background-color: rgba(203, 198, 208, 0.493);
+    background-color: rgba(150, 146, 154, 0.723);
+    color: rgb(26, 25, 25);
     border-radius: 30px;
     display: flex;
     flex-direction: column;

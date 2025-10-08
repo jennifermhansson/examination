@@ -181,30 +181,100 @@ h2 {
   margin: 25px;
 } 
 
-.cards {
+.cards-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch; 
-  gap: 2rem;
-  margin-top: 40px;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .card {
-  background-color: #fff;
-  padding: 1rem;
-  flex: 1 1 300px;
-  max-width: 400px;
-  width: 100%; 
+  background-color: #aca8a8;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  overflow: hidden;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+details.card[open] {
+  height: 250px; 
+  overflow-y: auto; 
+}
+
+@media (min-width: 768px) {
+  .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
   
+  .card {
+    flex: 1 1 300px; 
+    max-width: 350px;
+  }
+  
+
+  details.card[open] {
+    height: 350px;
+  }
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.503);
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.25rem;
+  list-style: none;
+  outline: none;
+  position: relative;
+  padding-right: 2rem; 
+}
+
+summary::after {
+  content: "▾";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+  font-size: 1.2rem;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+details.card {
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 0.5rem 0;
+  height: calc(100% - 60px); 
+  overflow-y: auto; /
+}
+
+.card h4, 
+.card summary h4 {
+  margin-bottom: 0.5rem; 
+  margin-top: 0;
+}
+
+.card p {
+  margin: 0.3rem 0; 
+  font-size: 1rem;
+  line-height: 1.4;
+  animation: fadeIn 0.4s ease;
 }
 
 .card-services{
@@ -221,15 +291,22 @@ h2 {
 
 }
 
-@media screen and (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
+/* Cards container - Mobile First */
+.cards {
+  display: flex;
+  flex-direction: column; /* Mobile: stacked vertically */
+  align-items: center;
+  gap: 2rem;
+  margin-top: 40px;
+}
 
-  .card {
-    max-width: 90%; 
+/* Desktop: cards side by side */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
   }
 }
 
@@ -283,11 +360,6 @@ footer {
 
 }
 @media screen and (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }    
-
     header nav {
         flex-direction: column;
     }

@@ -10,6 +10,7 @@
 .split-container {
     display: flex;
     min-height: 100vh;
+    color: black;
 }
 
 .left-side {
@@ -31,7 +32,13 @@
     padding: 30px;
 }
 
+.popupContainer h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .popupContainer input{
+    margin: 5px;
     width: 230px;
 }
 
@@ -39,17 +46,20 @@
     margin: 20px;
     display: flex;
     justify-content: center;
-    width: 150px;
+    width: 200px;
+    height: 100x;
     padding: 10px;
     background-color: #222222;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 12pt;
 }
 
 .btn:hover {
     background-color: #acacac;
+    color: black;
 }
 
 .popupFrame {
