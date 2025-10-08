@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pure Fitness</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/carousel.css">
+    <!-- <link rel="stylesheet" href="css/carousel.css"> -->
     <link href="css/newmember.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
      <a href="#about" class="skip-link">Gå direkt till innehåll</a>
 <header>
   <nav class="navbar">
-    <img src="logo.png" alt="logo">
+    <img src="logo.png" alt="logotype Pure Fitness gym">
     <h1>PURE FITNESS</h1>
     <button class="hamburger" id="hamburger">☰</button>
     <ul class="nav-links" id="nav-links">
@@ -34,7 +34,7 @@
       <video autoplay loop muted>
         <source
           src="https://cdn.pixabay.com/video/2025/07/23/293079_large.mp4"
-          type="video/mp4"/>
+          type="video/mp4" alt="video of three women working out"/>
       </video>
 
       <div class="hero-content">
@@ -49,75 +49,71 @@
       <h2>Det finns många anledningar att välja Pure Fitness</h2>
       <p id="about-text">Hos oss får du bland annat:</p>
   
-<div class="carousel-container">
-      <div class="inner-carousel">
-        <div class="track">
-          <div class="card-container">
-            <div class="card">
-          <h4>Öppettider</h4>
-          <p>Vi har öppet alla dagar i veckan för att passa din livsstil!
-          <p>Måndag-Fredag: 06:00-22:00</p>
-          <p>Lördag-Söndag: 08:00-20:00</p>
-          <p>Vår bemannade reception finns tillgänglig under vardagar mellan 09:00-18:00.</p>
-            </div>
+      <div class="cards-wrapper">
+        <details class="card">
+              <summary><h4>Öppettider</h4></summary>
+              <div class="card-content">
+                <p>Vi har öppet alla dagar i veckan för att passa din livsstil!</p>
+                <p>Måndag-Fredag: 06:00-22:00</p>
+                <p>Lördag-Söndag: 08:00-20:00</p>
+                <p>Vär bemannade reception finns tillgänglig under vardagar mellan 09:00-18:00.</p>
+              </div>
+            </details>
+        
+        <details class="card">
+          <summary><h4>Medlemskap</h4></summary>
+          <div class="card-content">
+            <p>Bli medlem hos Pure Fitness och få tillgång till ett tryggt och inspirerande träningsmiljö.</p>
+            <p>Vi erbjuder flexibla medlemskap. Välj mellan månadskort eller årskort.</p>
+            <p>Alla nya medlemmar får en kostnadsfri introduktionsträning med en av våra PT's.</p>
           </div>
-          <div class="card-container">
-            <div class="card">
-          <h4>Medlemskap</h4>
-          <p>Bli medlem hos Pure Fitness och få tillgång till ett tryggt och inspirerande träningsmiljö.
-          <p>Vi erbjuder flexibla medlemskap. Välj mellan månadskort eller årskort.</p>
-          <p>Alla nya medlemmar får en kostnadsfri introduktionsträning med en av våra PT's.</p>
-            </div>
+        </details>
+        
+        <details class="card">
+          <summary><h4>Vårt gym i Stockholm</h4></summary>
+          <div class="card-content">
+            <p>Du hittar oss mitt i hjärtat av Stockholm:</p>
+            <p>Pure Fitness Stockholm</p>
+            <p>Drottninggatan 85, 111 60 Stockholm</p>
+            <p>Gymmet är modernt utrustat och lättillgängligt med kollektivtrafik.</p>
           </div>
-          <div class="card-container">
-            <div class="card">
-          <h4>Vårt gym i Stockholm</h4>
-          <p>Du hittar oss mitt i hjärtat av Stockholm:</p>
-          <p>Pure Fitness Stockholm</p>
-          <p>Drottninggatan 85, 111 60 Stockholm</p>
-          <p>Gymmet är modernt utrustat och lättillgängligt med kollektivtrafik.</p>
-            </div>
+        </details>
+        
+        <details class="card">
+          <summary><h4>Gym för kvinnor</h4></summary>
+          <div class="card-content">
+            <p>Pure Fitness är ett tjejgym som fokuserar på trygghet, gemenskap och personlig utveckling.</p>
+            <p>Här tränar du i en avslappnad miljö där du kan känna dig bekväm och motiverad oavsett träningsnivå.</p>
           </div>
-          <div class="card-container">
-            <div class="card">
-          <h4>Gym för kvinnor</h4>
-          <p>Pure Fitness är ett tjejgym som fokuserar på trygghet, gemenskap och personlig utveckling.</p>
-          <p>Här tränar du i en avslappnad miljö där du kan känna dig bekväm och motiverad oavsett träningsnivå.</p>
-            </div>
+        </details>
+        
+        <details class="card">
+          <summary><h4>Våra PT</h4></summary>
+          <div class="card-content">
+            <p>Våra certifierade personliga tränare finns alltid tillgängliga för att hjälpa dig nå dina mål.</p>
+            <p>De erbjuder individuellt anpassade träningsprogram, kostråd och kontinuerlig motivation.</p>
+            <p>Du kan boka PT-pass direkt i receptionen eller via vår medlemsapp.</p>
           </div>
-          <div class="card-container">
-            <div class="card">
-          <h4>Våra PT</h4>
-          <p>Våra certifierade personliga tränare finns alltid tillgängliga för att hjälpa dig nå dina mål.</p>
-          <p>De erbjuder individuellt anpassade träningsprogram, kostråd och kontinuerlig motivation.</p>
-          <p>Du kan boka PT-pass direkt i receptionen eller via vår medlemsapp.</p>
-            </div>
+        </details>
+        
+        <details class="card">
+          <summary><h4>Kostrådgivning</h4></summary>
+          <div class="card-content">
+            <p>Våra certifierade personliga tränare är även kostrådgivare och hjälper dig att lägga upp en unik kostplan för dig.</p>
+            <p>När du blir medlem får du även gratis prenumeration på appen Lifesum för att optimera dina resultat</p>
           </div>
-                    <div class="card-container">
-            <div class="card">
-          <h4>Kostrådgivning</h4>
-          <p>Våra certifierade personliga tränare är även kostrådgivare och hjälper dig att lägga upp en unik kostplan för dig.</p>
-          <p>När du blir medlem får du även gratis prenumeration på appen Lifesum för att optimera dina resultat</p>
-         
-            </div>
+        </details>
+        
+        <details class="card">
+          <summary><h4>Moderna lokaler</h4></summary>
+          <div class="card-content">
+            <p>Moderna och fräscha lokaler mitt i Stockholm City</p>
+            <p>Nära till kollektivtrafik och gratis parkering för alla medlemmar</p>
+            <p>I omklädningsrummen hittar du hårfönar från Dyson, bra belysning och fri tillgång till hudvård från Rituals</p>
           </div>
-                              <div class="card-container">
-            <div class="card">
-          <h4>Moderna lokaler</h4>
-          <p>Moderna och fräscha lokaler mitt i Stockholm City</p>
-          <p>Nära till kollektivtrafik och gratis parkering för alla medlemmar</p>
-          <p>I omklädningsrummen hittar du hårfönar från Dyson, bra belysning och fri tillgång till hudvård från Rituals</p>
-            </div>
-          </div>
-          
-          
-        </div>
-        <div class="nav">
-          <button class="prev"><i class="fas fa-arrow-left fa-2x"></i></button>
-          <button class="next"><i class="fas fa-arrow-right fa-2x"></i></button>
-        </div>
-      </div>
-    </div>
+        </details>
+      </div> <!-- Stäng cards-wrapper -->
+
     </section>
     
     <footer>
