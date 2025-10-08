@@ -10,7 +10,20 @@
 }
 @media (max-width: 768px) {
   .carousel-container {
-    width: 95%;
+    width: 100%;              /* fyll skärmen */
+    max-width: 320px;         /* så att bara ett kort får plats */
+    margin: 0 auto;
+  }
+  .card-container {
+    width: 100%;              /* ett kort ska ta upp hela containern */
+    height: auto;
+    animation: none;          /* valfritt – stoppa autoscroll på mobil */
+  }
+  .inner-carousel {
+    height: auto;
+  }
+  .track {
+    transition: transform 0.3s ease;
   }
 }
 .inner-carousel {
@@ -31,11 +44,8 @@
       will-change: transform;
     animation: scrolling 10s linear infinite;
 }
-@media (max-width: 768px) {
-  .card-container {
-    width: 184px;
-  }
-}
+
+
 .card {
     background-color: rgba(245, 245, 220, 0.718);
   border: 1px solid rgba(6, 6, 6, 0.56);
