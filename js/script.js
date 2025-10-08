@@ -1,3 +1,11 @@
+  
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
 
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
