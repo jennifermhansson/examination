@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email");
     const membership = document.getElementById("membership");
 
-
+    
     firstName.addEventListener("blur", () => validateFirstName());
     lastName.addEventListener("blur", () => validateLastName());
     email.addEventListener("blur", () => validateEmail());
     membership.addEventListener("change", () => validateMembership());
 
-  
+ 
     form.addEventListener("submit", (e) => {
-        e.preventDefault(); //
+        e.preventDefault(); 
         
         const isValid = validateForm();
         if (isValid) {
@@ -74,11 +74,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const errorElement = document.getElementById("emailError");
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         
+   
         if (value === "") {
             showError(email, errorElement, "Email är obligatoriskt");
             return false;
-        } else if (!emailRegex.test(value)) {
+        } 
+        
+       
+        if (!emailRegex.test(value)) {
             showError(email, errorElement, "Ange en giltig email-adress");
+            return false;
+        }
+   
+        if (localStorage.getItem(value)) {
+            showError(email, errorElement, `Mailadressen ${value} är redan använd`);
             return false;
         }
         
@@ -112,9 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showSuccessMessage() {
-  
-        const userFirstName = firstName.value.trim();
         
+        const userFirstName = firstName.value.trim();
+        const userEmail = email.value.trim();
+        
+      
+        localStorage.setItem(userEmail, "registered");
        
         const successTitle = document.getElementById("successTitle");
         const successMessage = document.getElementById("successMessage");
@@ -133,7 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
             input.classList.remove("valid", "invalid");
         });
     }
-})
+
+});
 
 function closePopup() {
     const popup = document.getElementById("popupFrame");
