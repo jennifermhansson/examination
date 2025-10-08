@@ -18,12 +18,19 @@
         <a href="newmember.html">Bli medlem</a>
         <a href="gymclasses.html">Träningspass</a>
         <a href="bmicalculator.html">BMI-räknare</a>
-        <a href="contact.html">Kontakt</a>
+      
       </nav>
     </header>
   <body>
-
-        <section class="popupContainer"> 
+    <div class="split-container">
+      <div class="left-side">
+        <img
+          src="https://images.pexels.com/photos/3768722/pexels-photo-3768722.jpeg"
+          alt="bild av två kvinnor som gör en high five"
+        />
+      </div>
+      
+      <section class="popupContainer"> 
             <form id="membershipForm"> 
                 <h1>Bli medlem hos oss idag!</h1> 
                 
@@ -56,11 +63,13 @@
                 <p id="successMessage">Du är nu medlem!</p> 
                 <button type="button" onclick="closePopup()">OK!</button> 
             </div> 
-          </section> 
+          </section>
+    </div> <!-- Stäng split-container -->
 
         <footer>
       <p>&copy; 2025 Pure Fitness by Ama & Jennifer &#129655; Alla rättigheter förbehållna.</p>
     </footer>
+    
    <script src="js/newmember-validation.js"></script>
   </body>
 </html>
